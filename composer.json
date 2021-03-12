@@ -19,7 +19,7 @@
         }
     },
     "require": {
-        "php": "^7.1",
+        "php": "^7.3",
         "psr/http-message": "^1.0"
     },
     "require-dev": {
@@ -27,7 +27,7 @@
         "amphp/amp": "^2.0",
         "guzzlehttp/guzzle": "^6.3",
         "m6web/php-cs-fixer-config": "^1.0",
-        "ext-curl": "^7.1",
+        "ext-curl": "^7.3",
         "react/event-loop": "^1.0",
         "react/promise": "^2.7",
         "phpstan/phpstan": "^0.10.5",
