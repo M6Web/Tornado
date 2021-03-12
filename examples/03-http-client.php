@@ -7,7 +7,7 @@ use M6Web\Tornado\Adapter;
 use M6Web\Tornado\EventLoop;
 use M6Web\Tornado\HttpClient;
 
-function monitorRequest(EventLoop $eventLoop, HttpClient $httpClient, string $uri): \Generator
+function monitorRequest(EventLoop $eventLoop, HttpClient $httpClient, string $uri): Generator
 {
     // Let's use Guzzle Psr7 implementation
     $request = new \GuzzleHttp\Psr7\Request('GET', $uri, [], null, '2.0');

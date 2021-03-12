@@ -7,9 +7,7 @@ use M6Web\Tornado\Promise;
 
 class SynchronousEventLoop implements \M6Web\Tornado\EventLoop
 {
-    /**
-     * @var \Throwable[]
-     */
+    /** @var \Throwable[] */
     private $asyncThrowables = [];
 
     /**

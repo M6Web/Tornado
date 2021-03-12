@@ -6,7 +6,7 @@ require __DIR__.'/../vendor/autoload.php';
 use M6Web\Tornado\Adapter;
 use M6Web\Tornado\EventLoop;
 
-function throwingGenerator(): \Generator
+function throwingGenerator(): Generator
 {
     throw new \Exception('Oops, this is an exception');
     yield;

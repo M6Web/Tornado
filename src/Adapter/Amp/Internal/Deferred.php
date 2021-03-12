@@ -10,14 +10,10 @@ use M6Web\Tornado\Promise;
  */
 class Deferred implements \M6Web\Tornado\Deferred
 {
-    /**
-     * @var \Amp\Deferred
-     */
+    /** @var \Amp\Deferred */
     private $ampDeferred;
 
-    /**
-     * @var PromiseWrapper
-     */
+    /** @var PromiseWrapper */
     private $promise;
 
     public function __construct(\Amp\Deferred $ampDeferred, PromiseWrapper $promise)

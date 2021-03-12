@@ -10,14 +10,10 @@ use Psr\Http\Message\ResponseInterface;
 
 class HttpClient implements \M6Web\Tornado\HttpClient
 {
-    /**
-     * @var EventLoop
-     */
+    /** @var EventLoop */
     private $eventLoop;
 
-    /**
-     * @var GuzzleClientWrapper
-     */
+    /** @var GuzzleClientWrapper */
     private $clientWrapper;
 
     private $nbConcurrentRequests = 0;

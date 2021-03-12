@@ -196,7 +196,7 @@ class EventLoop implements \M6Web\Tornado\EventLoop
     {
         $deferred = $this->deferred();
         $this->reactEventLoop->addTimer(
-            $milliseconds / 1000 /* milliseconds per second */,
+            $milliseconds / 1000 /* milliseconds per second */ ,
             function () use ($deferred) {
                 $deferred->resolve(null);
             }

@@ -10,14 +10,10 @@ use M6Web\Tornado\Promise;
  */
 class Deferred implements \M6Web\Tornado\Deferred
 {
-    /**
-     * @var \React\Promise\Deferred
-     */
+    /** @var \React\Promise\Deferred */
     private $reactDeferred;
 
-    /**
-     * @var PromiseWrapper
-     */
+    /** @var PromiseWrapper */
     private $promise;
 
     public function __construct(\React\Promise\Deferred $reactDeferred, PromiseWrapper $promiseWrapper)

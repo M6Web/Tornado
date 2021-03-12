@@ -11,9 +11,7 @@ use M6Web\Tornado\Promise;
  */
 class PromiseWrapper implements Promise
 {
-    /**
-     * @var \Amp\Promise
-     */
+    /** @var \Amp\Promise */
     private $ampPromise;
 
     /** @var bool */

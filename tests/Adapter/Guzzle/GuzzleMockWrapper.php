@@ -7,19 +7,13 @@ use M6Web\Tornado\Adapter\Guzzle\GuzzleClientWrapper;
 
 final class GuzzleMockWrapper implements GuzzleClientWrapper
 {
-    /**
-     * @var \GuzzleHttp\Client
-     */
+    /** @var \GuzzleHttp\Client */
     private $guzzleClient;
 
-    /**
-     * @var array
-     */
+    /** @var array */
     private $transactions = [];
 
-    /**
-     * @var int
-     */
+    /** @var int */
     public $ticks;
 
     public function __construct(array $queue)

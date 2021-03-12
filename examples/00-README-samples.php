@@ -11,7 +11,7 @@ use Psr\Http\Message\ResponseInterface;
 /**
  * Sends a HTTP request a returns its body as a Json array.
  */
-function getJsonResponseAsync(Tornado\HttpClient $httpClient, RequestInterface $request): \Generator
+function getJsonResponseAsync(Tornado\HttpClient $httpClient, RequestInterface $request): Generator
 {
     /** @var ResponseInterface $response */
     $response = yield $httpClient->sendRequest($request);
@@ -56,14 +56,14 @@ function waitManyResponsesSynchronously(Tornado\EventLoop $eventLoop, Tornado\Ht
     }
 }
 
-function promiseWaiter(Tornado\Promise $promise): \Generator
+function promiseWaiter(Tornado\Promise $promise): Generator
 {
     echo "I'm waiting a promise…\n";
     $result = yield $promise;
     echo "I received [$result]!\n";
 }
 
-function deferredResolver(Tornado\EventLoop $eventLoop, Tornado\Deferred $deferred): \Generator
+function deferredResolver(Tornado\EventLoop $eventLoop, Tornado\Deferred $deferred): Generator
 {
     yield $eventLoop->delay(1000);
     $deferred->resolve('Hello World!');
@@ -78,7 +78,7 @@ function waitDeferredSynchronously(Tornado\EventLoop $eventLoop)
     ));
 }
 
-function failingAsynchronousFunction(Tornado\EventLoop $eventLoop): \Generator
+function failingAsynchronousFunction(Tornado\EventLoop $eventLoop): Generator
 {
     yield $eventLoop->idle();
 

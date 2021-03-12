@@ -11,9 +11,7 @@ use M6Web\Tornado\Promise;
  */
 class PromiseWrapper implements Promise
 {
-    /**
-     * @var \React\Promise\PromiseInterface
-     */
+    /** @var \React\Promise\PromiseInterface */
     private $reactPromise;
 
     /** @var bool */

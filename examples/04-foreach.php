@@ -6,7 +6,7 @@ require __DIR__.'/../vendor/autoload.php';
 use M6Web\Tornado\Adapter;
 use M6Web\Tornado\EventLoop;
 
-function asynchronousCountdown(EventLoop $eventLoop, string $name, int $count): \Generator
+function asynchronousCountdown(EventLoop $eventLoop, string $name, int $count): Generator
 {
     echo "[$name]\tLet me countdown from $count to 0.\n";
     for ($i = $count; $i >= 0; $i--) {

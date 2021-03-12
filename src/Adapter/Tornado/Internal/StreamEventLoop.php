@@ -9,17 +9,11 @@ use M6Web\Tornado\EventLoop;
  */
 class StreamEventLoop
 {
-    /**
-     * @var resource[]
-     */
+    /** @var resource[] */
     private $readStreams = [];
-    /**
-     * @var resource[]
-     */
+    /** @var resource[] */
     private $writeStreams = [];
-    /**
-     * @var PendingPromise[]
-     */
+    /** @var PendingPromise[] */
     private $pendingPromises = [];
 
     public function readable(EventLoop $eventLoop, $stream): PendingPromise

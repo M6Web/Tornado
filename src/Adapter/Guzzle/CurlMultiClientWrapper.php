@@ -4,14 +4,10 @@ namespace M6Web\Tornado\Adapter\Guzzle;
 
 final class CurlMultiClientWrapper implements GuzzleClientWrapper
 {
-    /**
-     * @var \GuzzleHttp\Handler\CurlMultiHandler
-     */
+    /** @var \GuzzleHttp\Handler\CurlMultiHandler */
     private $curlMultiHandler;
 
-    /**
-     * @var \GuzzleHttp\Client
-     */
+    /** @var \GuzzleHttp\Client */
     private $guzzleClient;
 
     /**
